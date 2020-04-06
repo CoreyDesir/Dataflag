@@ -4,10 +4,50 @@
     <meta charset="UTF-8">
     <title>DataFlag</title>
     <link rel="stylesheet" href="index.css">
-
+<script src="tabs.js"></script>
   </head>
 
 
+  <button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Home</button>
+  <button class="tablink" onclick="openPage('News', this, 'green')">News</button>
+  <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+  <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+
+  <div id="Home" class="tabcontent">
+    <h3>Home</h3>
+    <p>Home is where the heart is..</p>
+    <table style="width:100%">
+      <tr>
+        <th>Input</th>
+        <th>Output</th>
+
+      </tr>
+  </div>
+
+
+
+
+<!--Second Part-->
+
+
+  <div id="News" class="tabcontent">
+    <h3>News</h3>
+    <p>Some news this fine day!</p>
+  </div>
+
+  <div id="Contact" class="tabcontent">
+    <h3>Contact</h3>
+    <p>Get in touch, or swing by for a cup of coffee.</p>
+  </div>
+
+  <div id="About" class="tabcontent">
+    <h3>About</h3>
+    <p>Who we are and what we do.</p>
+  </div>
+
+
+
+<!---
   <body>
     <h1>💖 DataFlag</h1>
     <p>Create QRCodes for any purpose</p>
@@ -24,7 +64,7 @@
       <tr>
         <td><p>
         <div class="dropdown">
-          <button class="dropbtn">QR Code Types</button> <!-- This dropdown needs to determine what shows in a field below it -->
+          <button class="dropbtn">QR Code Types</button> // This dropdown needs to determine what shows in a field below it
           <div class="dropdown-content">
               <a href="#">Text</a>
               <a href="#">URL</a>
@@ -65,9 +105,25 @@
         </textarea></td>
 
       </tr>
+
+<tr>
+<td>
+</td>
+<td>
+<button type="button">Save QRCode</button>
+
+
+
+          <div class="dropdown"> <select id="Decode">
+          <option value="lowest">Decode From File</option>
+          <option value="medium">Decome From Webcam</option>
+        </div>
+
+</td>
+
+      </tr>
+
     </table>
-
-
 
 <label for="marginSize">Margin Size: </label>
 
@@ -77,6 +133,9 @@
 
 
 
+
   </body>
 
 </html>
+
+-->
